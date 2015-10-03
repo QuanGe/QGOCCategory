@@ -14,6 +14,7 @@
 		98F57FBE1BC00F650071D3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FBD1BC00F650071D3E9 /* Assets.xcassets */; };
 		98F57FC11BC00F650071D3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FBF1BC00F650071D3E9 /* LaunchScreen.storyboard */; };
 		98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FDC1BC013ED0071D3E9 /* UITextField+LimitLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FDB1BC013ED0071D3E9 /* UITextField+LimitLength.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		98F57FC21BC00F650071D3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98F57FD61BC011D30071D3E9 /* UIViewController+LogDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LogDealloc.h"; sourceTree = "<group>"; };
 		98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LogDealloc.m"; sourceTree = "<group>"; };
+		98F57FD91BC013100071D3E9 /* QGOCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGOCCategory.h; sourceTree = "<group>"; };
+		98F57FDA1BC013ED0071D3E9 /* UITextField+LimitLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LimitLength.h"; sourceTree = "<group>"; };
+		98F57FDB1BC013ED0071D3E9 /* UITextField+LimitLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LimitLength.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,11 @@
 		98F57FD51BC011D30071D3E9 /* QGOCCategory */ = {
 			isa = PBXGroup;
 			children = (
+				98F57FD91BC013100071D3E9 /* QGOCCategory.h */,
 				98F57FD61BC011D30071D3E9 /* UIViewController+LogDealloc.h */,
 				98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */,
+				98F57FDA1BC013ED0071D3E9 /* UITextField+LimitLength.h */,
+				98F57FDB1BC013ED0071D3E9 /* UITextField+LimitLength.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -163,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F57FDC1BC013ED0071D3E9 /* UITextField+LimitLength.m in Sources */,
 				98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */,
 				98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */,
 				98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */,

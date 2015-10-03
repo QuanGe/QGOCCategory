@@ -8,17 +8,18 @@
 
 #import "UIViewController+LogDealloc.h"
 #import <objc/runtime.h>
+
 @implementation UIViewController (LogDealloc)
 + (void)load {
     SEL deallocSelector = sel_registerName("dealloc");
     Method dea = class_getInstanceMethod(self, deallocSelector);
-    Method logdealloc = class_getInstanceMethod(self, @selector(logDealloc));
-    method_exchangeImplementations(dea, logdealloc);
+    Method qgoc_logDealloc = class_getInstanceMethod(self, @selector(qgoc_logDealloc));
+    method_exchangeImplementations(dea, qgoc_logDealloc);
 }
 
--(void)logDealloc
+-(void)qgoc_logDealloc
 {
     NSLog(@"%@ 类型的viewcontroller进行了释放",NSStringFromClass(self.class));
-    [self logDealloc];
+    [self qgoc_logDealloc];
 }
 @end
