@@ -13,7 +13,7 @@
 		98F57FBC1BC00F650071D3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FBA1BC00F650071D3E9 /* Main.storyboard */; };
 		98F57FBE1BC00F650071D3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FBD1BC00F650071D3E9 /* Assets.xcassets */; };
 		98F57FC11BC00F650071D3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FBF1BC00F650071D3E9 /* LaunchScreen.storyboard */; };
-		98F57FCE1BC010480071D3E9 /* QGOCCategory in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FCD1BC010480071D3E9 /* QGOCCategory */; settings = {ASSET_TAGS = (); }; };
+		98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,8 @@
 		98F57FBD1BC00F650071D3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98F57FC01BC00F650071D3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98F57FC21BC00F650071D3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98F57FCD1BC010480071D3E9 /* QGOCCategory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = QGOCCategory; sourceTree = "<group>"; };
+		98F57FD61BC011D30071D3E9 /* UIViewController+LogDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LogDealloc.h"; sourceTree = "<group>"; };
+		98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LogDealloc.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		98F57FA51BC00F650071D3E9 = {
 			isa = PBXGroup;
 			children = (
+				98F57FD51BC011D30071D3E9 /* QGOCCategory */,
 				98F57FB01BC00F650071D3E9 /* QGOCCategoryDemo */,
 				98F57FAF1BC00F650071D3E9 /* Products */,
 			);
@@ -60,7 +62,6 @@
 		98F57FB01BC00F650071D3E9 /* QGOCCategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				98F57FCD1BC010480071D3E9 /* QGOCCategory */,
 				98F57FB41BC00F650071D3E9 /* AppDelegate.h */,
 				98F57FB51BC00F650071D3E9 /* AppDelegate.m */,
 				98F57FB71BC00F650071D3E9 /* ViewController.h */,
@@ -80,6 +81,16 @@
 				98F57FB21BC00F650071D3E9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98F57FD51BC011D30071D3E9 /* QGOCCategory */ = {
+			isa = PBXGroup;
+			children = (
+				98F57FD61BC011D30071D3E9 /* UIViewController+LogDealloc.h */,
+				98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */,
+			);
+			name = QGOCCategory;
+			path = ../../QGOCCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +150,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98F57FCE1BC010480071D3E9 /* QGOCCategory in Resources */,
 				98F57FC11BC00F650071D3E9 /* LaunchScreen.storyboard in Resources */,
 				98F57FBE1BC00F650071D3E9 /* Assets.xcassets in Resources */,
 				98F57FBC1BC00F650071D3E9 /* Main.storyboard in Resources */,
@@ -155,6 +165,7 @@
 			files = (
 				98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */,
 				98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */,
+				98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */,
 				98F57FB31BC00F650071D3E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +313,7 @@
 				98F57FC71BC00F650071D3E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
