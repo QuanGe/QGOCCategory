@@ -11,20 +11,33 @@
 #import <objc/runtime.h>
 
 @implementation UITextField (LimitLength)
-- (NSInteger)qgoc_limitLengthNum
+
+/**
+ *  获取输入框最多可以输入的字数
+ *  return  最多可以输入的字数。
+ */
+- (NSInteger)qgocc_limitLengthNum
 {
-    return [objc_getAssociatedObject(self, @selector(qgoc_limitLengthNum)) integerValue];
+    return [objc_getAssociatedObject(self, @selector(qgocc_limitLengthNum)) integerValue];
 }
 
-- (void)qgoc_setLimitTextLength:(NSInteger)length
+/**
+ *  设置输入框最多输入的字数
+ *  @param  length：最大输入的字数
+ */
+- (void)qgocc_setLimitTextLength:(NSInteger)length
 {
-    objc_setAssociatedObject(self, @selector(qgoc_limitLengthNum), [NSNumber numberWithInteger:length], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(qgocc_limitLengthNum), [NSNumber numberWithInteger:length], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self addTarget:self action:@selector(textFieldTextLengthLimit:) forControlEvents:UIControlEventEditingChanged];
 }
 
+/**
+ *  输入框的文字有改变时触发此函数
+ *  @param  sender：文本框
+ */
 - (void)textFieldTextLengthLimit:(id)sender
 {
-    NSNumber *lengthNumber = objc_getAssociatedObject(self, @selector(qgoc_limitLengthNum));
+    NSNumber *lengthNumber = objc_getAssociatedObject(self, @selector(qgocc_limitLengthNum));
     NSInteger textLength = [lengthNumber integerValue];
     //if the systemVersion up 8.0
     if([[[[UIDevice currentDevice] systemVersion]substringToIndex:1] floatValue] != 7.0)

@@ -15,6 +15,12 @@
 		98F57FC11BC00F650071D3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F57FBF1BC00F650071D3E9 /* LaunchScreen.storyboard */; };
 		98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */; settings = {ASSET_TAGS = (); }; };
 		98F57FDC1BC013ED0071D3E9 /* UITextField+LimitLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FDB1BC013ED0071D3E9 /* UITextField+LimitLength.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FDF1BC0AFAC0071D3E9 /* NSString+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FDE1BC0AFAC0071D3E9 /* NSString+AES256.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FE21BC0AFD00071D3E9 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FE11BC0AFD00071D3E9 /* NSData+AES256.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FE51BC0AFFA0071D3E9 /* NSString+M3u8.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FE41BC0AFFA0071D3E9 /* NSString+M3u8.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FE81BC0B4340071D3E9 /* UITabBarController+HideTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FE71BC0B4340071D3E9 /* UITabBarController+HideTabBar.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FEB1BC0C1000071D3E9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FEA1BC0C1000071D3E9 /* NSString+MD5.m */; settings = {ASSET_TAGS = (); }; };
+		98F57FEE1BC0C1F60071D3E9 /* NSString+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FED1BC0C1F60071D3E9 /* NSString+Regular.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,18 @@
 		98F57FD91BC013100071D3E9 /* QGOCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGOCCategory.h; sourceTree = "<group>"; };
 		98F57FDA1BC013ED0071D3E9 /* UITextField+LimitLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LimitLength.h"; sourceTree = "<group>"; };
 		98F57FDB1BC013ED0071D3E9 /* UITextField+LimitLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LimitLength.m"; sourceTree = "<group>"; };
+		98F57FDD1BC0AFAC0071D3E9 /* NSString+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES256.h"; sourceTree = "<group>"; };
+		98F57FDE1BC0AFAC0071D3E9 /* NSString+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES256.m"; sourceTree = "<group>"; };
+		98F57FE01BC0AFD00071D3E9 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		98F57FE11BC0AFD00071D3E9 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		98F57FE31BC0AFFA0071D3E9 /* NSString+M3u8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+M3u8.h"; sourceTree = "<group>"; };
+		98F57FE41BC0AFFA0071D3E9 /* NSString+M3u8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+M3u8.m"; sourceTree = "<group>"; };
+		98F57FE61BC0B4340071D3E9 /* UITabBarController+HideTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+HideTabBar.h"; sourceTree = "<group>"; };
+		98F57FE71BC0B4340071D3E9 /* UITabBarController+HideTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+HideTabBar.m"; sourceTree = "<group>"; };
+		98F57FE91BC0C1000071D3E9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		98F57FEA1BC0C1000071D3E9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		98F57FEC1BC0C1F60071D3E9 /* NSString+Regular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regular.h"; sourceTree = "<group>"; };
+		98F57FED1BC0C1F60071D3E9 /* NSString+Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regular.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +113,18 @@
 				98F57FD71BC011D30071D3E9 /* UIViewController+LogDealloc.m */,
 				98F57FDA1BC013ED0071D3E9 /* UITextField+LimitLength.h */,
 				98F57FDB1BC013ED0071D3E9 /* UITextField+LimitLength.m */,
+				98F57FDD1BC0AFAC0071D3E9 /* NSString+AES256.h */,
+				98F57FDE1BC0AFAC0071D3E9 /* NSString+AES256.m */,
+				98F57FE01BC0AFD00071D3E9 /* NSData+AES256.h */,
+				98F57FE11BC0AFD00071D3E9 /* NSData+AES256.m */,
+				98F57FE31BC0AFFA0071D3E9 /* NSString+M3u8.h */,
+				98F57FE41BC0AFFA0071D3E9 /* NSString+M3u8.m */,
+				98F57FE61BC0B4340071D3E9 /* UITabBarController+HideTabBar.h */,
+				98F57FE71BC0B4340071D3E9 /* UITabBarController+HideTabBar.m */,
+				98F57FE91BC0C1000071D3E9 /* NSString+MD5.h */,
+				98F57FEA1BC0C1000071D3E9 /* NSString+MD5.m */,
+				98F57FEC1BC0C1F60071D3E9 /* NSString+Regular.h */,
+				98F57FED1BC0C1F60071D3E9 /* NSString+Regular.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -172,8 +202,14 @@
 			files = (
 				98F57FDC1BC013ED0071D3E9 /* UITextField+LimitLength.m in Sources */,
 				98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */,
+				98F57FEE1BC0C1F60071D3E9 /* NSString+Regular.m in Sources */,
+				98F57FEB1BC0C1000071D3E9 /* NSString+MD5.m in Sources */,
+				98F57FE51BC0AFFA0071D3E9 /* NSString+M3u8.m in Sources */,
 				98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */,
+				98F57FDF1BC0AFAC0071D3E9 /* NSString+AES256.m in Sources */,
+				98F57FE81BC0B4340071D3E9 /* UITabBarController+HideTabBar.m in Sources */,
 				98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */,
+				98F57FE21BC0AFD00071D3E9 /* NSData+AES256.m in Sources */,
 				98F57FB31BC00F650071D3E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
