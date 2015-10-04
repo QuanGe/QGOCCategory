@@ -7,4 +7,11 @@
 //
 
 #import "UIViewController+LogDealloc.h"
+#import "UITabBarController+HideTabBar.h"
 #import "UITextField+LimitLength.h"
+#import "NSData+AES256.h"
+#import "NSString+AES256.h"
+#import "NSString+M3u8.h"
+#import "NSString+MD5.h"
+#import "NSString+Regular.h"
+
