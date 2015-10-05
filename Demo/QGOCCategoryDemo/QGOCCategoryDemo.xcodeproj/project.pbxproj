@@ -12,6 +12,7 @@
 		98EDC7C51BC26660004C5277 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C41BC26660004C5277 /* UIImage+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7C81BC26AF1004C5277 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7CB1BC26C19004C5277 /* NSFileManager+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */; settings = {ASSET_TAGS = (); }; };
+		98EDC7CE1BC26F31004C5277 /* UIDevice+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98F57FB31BC00F650071D3E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB21BC00F650071D3E9 /* main.m */; };
 		98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB51BC00F650071D3E9 /* AppDelegate.m */; };
 		98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB81BC00F650071D3E9 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 		98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
 		98EDC7C91BC26C19004C5277 /* NSFileManager+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Common.h"; sourceTree = "<group>"; };
 		98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Common.m"; sourceTree = "<group>"; };
+		98EDC7CC1BC26F31004C5277 /* UIDevice+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Common.h"; sourceTree = "<group>"; };
+		98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Common.m"; sourceTree = "<group>"; };
 		98F57FAE1BC00F650071D3E9 /* QGOCCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QGOCCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F57FB21BC00F650071D3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98F57FB41BC00F650071D3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */,
 				98EDC7C91BC26C19004C5277 /* NSFileManager+Common.h */,
 				98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */,
+				98EDC7CC1BC26F31004C5277 /* UIDevice+Common.h */,
+				98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -232,6 +237,7 @@
 				98F57FEB1BC0C1000071D3E9 /* NSString+MD5.m in Sources */,
 				98EDC7C51BC26660004C5277 /* UIImage+Common.m in Sources */,
 				98F57FE51BC0AFFA0071D3E9 /* NSString+M3u8.m in Sources */,
+				98EDC7CE1BC26F31004C5277 /* UIDevice+Common.m in Sources */,
 				98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */,
 				98EDC7C21BC22F15004C5277 /* NSDate+Common.m in Sources */,
 				98F57FDF1BC0AFAC0071D3E9 /* NSString+AES256.m in Sources */,
@@ -351,9 +357,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QGOCCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quange.QGOCCategoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,9 +370,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QGOCCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quange.QGOCCategoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

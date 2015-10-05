@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "QGOCCategory.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"设备空余容量%@ 当前软件版本号：%@ 当前使用的设备是:%@",[UIDevice qgocc_freeDiskSpaceBytes],[UIDevice qgocc_appVersion],[UIDevice qgocc_deviceVersion] );
 }
 
 - (void)didReceiveMemoryWarning {

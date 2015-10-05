@@ -19,4 +19,5 @@
 #import "UIImage+Common.h"
 #import "UIColor+Common.h"
 #import "NSFileManager+Common.h"
+#import "UIDevice+Common.h"
 
