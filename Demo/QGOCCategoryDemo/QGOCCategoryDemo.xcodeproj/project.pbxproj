@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98EDC7BF1BC22175004C5277 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7BE1BC22175004C5277 /* UIAlertView+Block.m */; settings = {ASSET_TAGS = (); }; };
+		98EDC7C21BC22F15004C5277 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C11BC22F15004C5277 /* NSDate+Common.m */; settings = {ASSET_TAGS = (); }; };
+		98EDC7C51BC26660004C5277 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C41BC26660004C5277 /* UIImage+Common.m */; settings = {ASSET_TAGS = (); }; };
+		98EDC7C81BC26AF1004C5277 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */; settings = {ASSET_TAGS = (); }; };
+		98EDC7CB1BC26C19004C5277 /* NSFileManager+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98F57FB31BC00F650071D3E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB21BC00F650071D3E9 /* main.m */; };
 		98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB51BC00F650071D3E9 /* AppDelegate.m */; };
 		98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB81BC00F650071D3E9 /* ViewController.m */; };
@@ -24,6 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98EDC7BD1BC22175004C5277 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		98EDC7BE1BC22175004C5277 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
+		98EDC7C01BC22F15004C5277 /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
+		98EDC7C11BC22F15004C5277 /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		98EDC7C31BC26660004C5277 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		98EDC7C41BC26660004C5277 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		98EDC7C61BC26AF1004C5277 /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
+		98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
+		98EDC7C91BC26C19004C5277 /* NSFileManager+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Common.h"; sourceTree = "<group>"; };
+		98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Common.m"; sourceTree = "<group>"; };
 		98F57FAE1BC00F650071D3E9 /* QGOCCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QGOCCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F57FB21BC00F650071D3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98F57FB41BC00F650071D3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +140,16 @@
 				98F57FEA1BC0C1000071D3E9 /* NSString+MD5.m */,
 				98F57FEC1BC0C1F60071D3E9 /* NSString+Regular.h */,
 				98F57FED1BC0C1F60071D3E9 /* NSString+Regular.m */,
+				98EDC7BD1BC22175004C5277 /* UIAlertView+Block.h */,
+				98EDC7BE1BC22175004C5277 /* UIAlertView+Block.m */,
+				98EDC7C01BC22F15004C5277 /* NSDate+Common.h */,
+				98EDC7C11BC22F15004C5277 /* NSDate+Common.m */,
+				98EDC7C31BC26660004C5277 /* UIImage+Common.h */,
+				98EDC7C41BC26660004C5277 /* UIImage+Common.m */,
+				98EDC7C61BC26AF1004C5277 /* UIColor+Common.h */,
+				98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */,
+				98EDC7C91BC26C19004C5277 /* NSFileManager+Common.h */,
+				98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -201,14 +226,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F57FDC1BC013ED0071D3E9 /* UITextField+LimitLength.m in Sources */,
+				98EDC7CB1BC26C19004C5277 /* NSFileManager+Common.m in Sources */,
 				98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */,
 				98F57FEE1BC0C1F60071D3E9 /* NSString+Regular.m in Sources */,
 				98F57FEB1BC0C1000071D3E9 /* NSString+MD5.m in Sources */,
+				98EDC7C51BC26660004C5277 /* UIImage+Common.m in Sources */,
 				98F57FE51BC0AFFA0071D3E9 /* NSString+M3u8.m in Sources */,
 				98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */,
+				98EDC7C21BC22F15004C5277 /* NSDate+Common.m in Sources */,
 				98F57FDF1BC0AFAC0071D3E9 /* NSString+AES256.m in Sources */,
+				98EDC7C81BC26AF1004C5277 /* UIColor+Common.m in Sources */,
 				98F57FE81BC0B4340071D3E9 /* UITabBarController+HideTabBar.m in Sources */,
 				98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */,
+				98EDC7BF1BC22175004C5277 /* UIAlertView+Block.m in Sources */,
 				98F57FE21BC0AFD00071D3E9 /* NSData+AES256.m in Sources */,
 				98F57FB31BC00F650071D3E9 /* main.m in Sources */,
 			);
