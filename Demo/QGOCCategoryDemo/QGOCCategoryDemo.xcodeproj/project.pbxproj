@@ -13,6 +13,7 @@
 		98EDC7C81BC26AF1004C5277 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C71BC26AF1004C5277 /* UIColor+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7CB1BC26C19004C5277 /* NSFileManager+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7CE1BC26F31004C5277 /* UIDevice+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */; settings = {ASSET_TAGS = (); }; };
+		98EDC7D11BC2D838004C5277 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7D01BC2D838004C5277 /* NSString+URLEncoding.m */; settings = {ASSET_TAGS = (); }; };
 		98F57FB31BC00F650071D3E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB21BC00F650071D3E9 /* main.m */; };
 		98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB51BC00F650071D3E9 /* AppDelegate.m */; };
 		98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB81BC00F650071D3E9 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 		98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Common.m"; sourceTree = "<group>"; };
 		98EDC7CC1BC26F31004C5277 /* UIDevice+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Common.h"; sourceTree = "<group>"; };
 		98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Common.m"; sourceTree = "<group>"; };
+		98EDC7CF1BC2D838004C5277 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		98EDC7D01BC2D838004C5277 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		98F57FAE1BC00F650071D3E9 /* QGOCCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QGOCCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F57FB21BC00F650071D3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98F57FB41BC00F650071D3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */,
 				98EDC7CC1BC26F31004C5277 /* UIDevice+Common.h */,
 				98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */,
+				98EDC7CF1BC2D838004C5277 /* NSString+URLEncoding.h */,
+				98EDC7D01BC2D838004C5277 /* NSString+URLEncoding.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EDC7D11BC2D838004C5277 /* NSString+URLEncoding.m in Sources */,
 				98F57FDC1BC013ED0071D3E9 /* UITextField+LimitLength.m in Sources */,
 				98EDC7CB1BC26C19004C5277 /* NSFileManager+Common.m in Sources */,
 				98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */,

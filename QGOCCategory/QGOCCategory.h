@@ -14,10 +14,12 @@
 #import "NSString+M3u8.h"
 #import "NSString+MD5.h"
 #import "NSString+Regular.h"
+#import "NSString+URLEncoding.h"
 #import "UIAlertView+Block.h"
 #import "NSDate+Common.h"
 #import "UIImage+Common.h"
 #import "UIColor+Common.h"
 #import "NSFileManager+Common.h"
 #import "UIDevice+Common.h"
+
 
