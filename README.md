@@ -26,6 +26,6 @@ UIColor+Common                根据十六进制颜色值返回UIColor
 
 NSFileManager+Common          在相应目录下创建一个文件夹、保存文件到相应路径下、查找并返回文件、删除文件
 
-
+UIDevice (Common)             获取设备型号、iOS系统版本、APP版本、是否为iPad、是否为iPhone、设备唯一标示、设备硬盘容量、设备硬盘空闲容量
 
 
