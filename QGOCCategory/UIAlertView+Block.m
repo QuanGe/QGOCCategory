@@ -10,6 +10,17 @@
 #import <objc/runtime.h>
 
 @implementation UIAlertView (Block)
+
+/**
+ *  弹框 点击事件以block实现
+ *  @param  title:弹框标题
+ *  @param  message:弹框内容
+ *  @param  style:弹框样式
+ *  @param  cancelButtonTitle:取消按钮上的文字
+ *  @param  otherButtonTitles:其他按钮上的文字
+ *  @param  tapBlock:点击block
+ *  return  点击事件以block实现的弹框
+ */
 + (instancetype)qgocc_showWithTitle:(NSString *)title
                       message:(NSString *)message
                         style:(UIAlertViewStyle)style
@@ -46,7 +57,15 @@
 #endif
 }
 
-
+/**
+ *  弹框 点击事件以block实现
+ *  @param  title:弹框标题
+ *  @param  message:弹框内容
+ *  @param  cancelButtonTitle:取消按钮上的文字
+ *  @param  otherButtonTitles:其他按钮上的文字
+ *  @param  tapBlock:点击block
+ *  return  点击事件以block实现的弹框
+ */
 + (instancetype)qgocc_showWithTitle:(NSString *)title
                       message:(NSString *)message
             cancelButtonTitle:(NSString *)cancelButtonTitle
@@ -65,7 +84,7 @@
     return objc_getAssociatedObject(self, @selector(qgocc_tapBlock));
 }
 
-- (void)setTapBlock:(qgocc_UIAlertViewTapBlock)tapBlock {
+- (void)setQgocc_tapBlock:(qgocc_UIAlertViewTapBlock)tapBlock {
     [self _checkAlertViewDelegate];
     objc_setAssociatedObject(self, @selector(qgocc_tapBlock), tapBlock, OBJC_ASSOCIATION_COPY);
 }
