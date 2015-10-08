@@ -21,5 +21,6 @@
 #import "UIColor+Common.h"
 #import "NSFileManager+Common.h"
 #import "UIDevice+Common.h"
+#import "UIView+VFL.h"
 
 
