@@ -15,6 +15,8 @@
 		98EDC7CB1BC26C19004C5277 /* NSFileManager+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CA1BC26C19004C5277 /* NSFileManager+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7CE1BC26F31004C5277 /* UIDevice+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7D11BC2D838004C5277 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7D01BC2D838004C5277 /* NSString+URLEncoding.m */; settings = {ASSET_TAGS = (); }; };
+		98F383271BC6B74D004D839F /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F383261BC6B74D004D839F /* UITextView+PlaceHolder.m */; settings = {ASSET_TAGS = (); }; };
+		98F3832A1BC6C3A4004D839F /* TestTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F383291BC6C3A4004D839F /* TestTextViewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		98F57FB31BC00F650071D3E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB21BC00F650071D3E9 /* main.m */; };
 		98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB51BC00F650071D3E9 /* AppDelegate.m */; };
 		98F57FB91BC00F650071D3E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F57FB81BC00F650071D3E9 /* ViewController.m */; };
@@ -48,6 +50,10 @@
 		98EDC7CD1BC26F31004C5277 /* UIDevice+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Common.m"; sourceTree = "<group>"; };
 		98EDC7CF1BC2D838004C5277 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		98EDC7D01BC2D838004C5277 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		98F383251BC6B74D004D839F /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
+		98F383261BC6B74D004D839F /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
+		98F383281BC6C3A4004D839F /* TestTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTextViewViewController.h; sourceTree = "<group>"; };
+		98F383291BC6C3A4004D839F /* TestTextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTextViewViewController.m; sourceTree = "<group>"; };
 		98F57FAE1BC00F650071D3E9 /* QGOCCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QGOCCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F57FB21BC00F650071D3E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98F57FB41BC00F650071D3E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 				98F57FBF1BC00F650071D3E9 /* LaunchScreen.storyboard */,
 				98F57FC21BC00F650071D3E9 /* Info.plist */,
 				98F57FB11BC00F650071D3E9 /* Supporting Files */,
+				98F383281BC6C3A4004D839F /* TestTextViewViewController.h */,
+				98F383291BC6C3A4004D839F /* TestTextViewViewController.m */,
 			);
 			path = QGOCCategoryDemo;
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 				98EDC7D01BC2D838004C5277 /* NSString+URLEncoding.m */,
 				98921B5A1BC69E8F0041B616 /* UIView+VFL.h */,
 				98921B5B1BC69E8F0041B616 /* UIView+VFL.m */,
+				98F383251BC6B74D004D839F /* UITextView+PlaceHolder.h */,
+				98F383261BC6B74D004D839F /* UITextView+PlaceHolder.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -250,7 +260,9 @@
 				98F57FE51BC0AFFA0071D3E9 /* NSString+M3u8.m in Sources */,
 				98EDC7CE1BC26F31004C5277 /* UIDevice+Common.m in Sources */,
 				98F57FB61BC00F650071D3E9 /* AppDelegate.m in Sources */,
+				98F3832A1BC6C3A4004D839F /* TestTextViewViewController.m in Sources */,
 				98EDC7C21BC22F15004C5277 /* NSDate+Common.m in Sources */,
+				98F383271BC6B74D004D839F /* UITextView+PlaceHolder.m in Sources */,
 				98F57FDF1BC0AFAC0071D3E9 /* NSString+AES256.m in Sources */,
 				98921B5C1BC69E8F0041B616 /* UIView+VFL.m in Sources */,
 				98EDC7C81BC26AF1004C5277 /* UIColor+Common.m in Sources */,
