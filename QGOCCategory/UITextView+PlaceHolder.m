@@ -60,8 +60,49 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    if(self.text.length>[self qgocc_maxLengthNum])
+    
+    if([[[[UIDevice currentDevice] systemVersion]substringToIndex:1] floatValue] != 7.0)
+    {
+        if(self.text.length > [self qgocc_maxLengthNum])
         self.text = [self.text substringToIndex:[self qgocc_maxLengthNum]];
+        
+    }
+    else
+    {
+        //if the systemVersion is 7.x
+        BOOL isChinese;
+        if ([[[UITextInputMode currentInputMode] primaryLanguage] isEqualToString: @"en-US"]) {
+            isChinese = NO;
+        }
+        else
+        {
+            isChinese = YES;
+        }
+        
+        NSString *str = [[self text] stringByReplacingOccurrencesOfString:@"?" withString:@""];
+        if (isChinese) {
+            UITextRange *selectedRange = [self markedTextRange];
+            //获取高亮部分
+            UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
+            // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
+            if (!position) {
+                //NSLog(@"汉字");
+                if ( str.length> [self qgocc_maxLengthNum]) {
+                    NSString *strNew = [NSString stringWithString:str];
+                    [self setText:[strNew substringToIndex:[self qgocc_maxLengthNum]]];
+                }
+            }
+            else
+            {
+                //NSLog(@"输入的英文还没有转化为汉字的状态");
+                
+            }
+        }
+        else if(self.text.length > [self qgocc_maxLengthNum]){
+            self.text = [self.text substringToIndex:[self qgocc_maxLengthNum]];
+        }
+    }
+   
     if(self.attributedText.length>[self qgocc_maxLengthNum])
         self.attributedText = [self.attributedText attributedSubstringFromRange:NSMakeRange(0,[self qgocc_maxLengthNum])];
     if (self.hasText) return;
