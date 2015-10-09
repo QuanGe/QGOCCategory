@@ -29,3 +29,4 @@ Use this lib you can get some iOS Object-C category
 `UIDevice (Common)`             获取设备型号、iOS系统版本、APP版本、是否为iPad、是否为iPhone、设备唯一标示、设备硬盘容量、设备硬盘空闲容量
 
 `UIView (VFL)`                  以VFL实现非常简单的的自动布局
+`UITextView (PlaceHolder)`      textview占位文字的添加 及字数限制
