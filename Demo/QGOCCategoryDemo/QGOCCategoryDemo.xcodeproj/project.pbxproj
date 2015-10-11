@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98921B5C1BC69E8F0041B616 /* UIView+VFL.m in Sources */ = {isa = PBXBuildFile; fileRef = 98921B5B1BC69E8F0041B616 /* UIView+VFL.m */; settings = {ASSET_TAGS = (); }; };
+		98A3B8B11BCAACC50057D87F /* UIViewController+PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3B8B01BCAACC50057D87F /* UIViewController+PopWindow.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7BF1BC22175004C5277 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7BE1BC22175004C5277 /* UIAlertView+Block.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7C21BC22F15004C5277 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C11BC22F15004C5277 /* NSDate+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98EDC7C51BC26660004C5277 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC7C41BC26660004C5277 /* UIImage+Common.m */; settings = {ASSET_TAGS = (); }; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		98921B5A1BC69E8F0041B616 /* UIView+VFL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VFL.h"; sourceTree = "<group>"; };
 		98921B5B1BC69E8F0041B616 /* UIView+VFL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VFL.m"; sourceTree = "<group>"; };
+		98A3B8AF1BCAACC50057D87F /* UIViewController+PopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopWindow.h"; sourceTree = "<group>"; };
+		98A3B8B01BCAACC50057D87F /* UIViewController+PopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopWindow.m"; sourceTree = "<group>"; };
 		98EDC7BD1BC22175004C5277 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		98EDC7BE1BC22175004C5277 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		98EDC7C01BC22F15004C5277 /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				98921B5B1BC69E8F0041B616 /* UIView+VFL.m */,
 				98F383251BC6B74D004D839F /* UITextView+PlaceHolder.h */,
 				98F383261BC6B74D004D839F /* UITextView+PlaceHolder.m */,
+				98A3B8AF1BCAACC50057D87F /* UIViewController+PopWindow.h */,
+				98A3B8B01BCAACC50057D87F /* UIViewController+PopWindow.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -270,6 +275,7 @@
 				98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */,
 				98EDC7BF1BC22175004C5277 /* UIAlertView+Block.m in Sources */,
 				98F57FE21BC0AFD00071D3E9 /* NSData+AES256.m in Sources */,
+				98A3B8B11BCAACC50057D87F /* UIViewController+PopWindow.m in Sources */,
 				98F57FB31BC00F650071D3E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
