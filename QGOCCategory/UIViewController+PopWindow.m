@@ -31,7 +31,11 @@
     return objc_getAssociatedObject(self, @selector(popBoxView));
 }
 
-- (void)buildPopBoxView
+/**
+ *  创建显示层,第一步要做的就是这个，可以写在[super loadView]的下面
+ *  return  无
+ */
+- (void)qgocc_buildPopBoxView
 {
     
     self.view.superview.frame=[[UIScreen mainScreen] bounds];
@@ -84,9 +88,32 @@
         
     }
     
+    [self qgocc_addKeyboardNotificationObserver];
+    
+    {
+        SEL viewWillAppear = sel_registerName("viewWillAppear:");
+        Method dea = class_getInstanceMethod(object_getClass(self), viewWillAppear);
+        Method qgocc_viewWillAppear = class_getInstanceMethod(object_getClass(self), @selector(qgocc_ViewWillAppear:));
+        method_exchangeImplementations(dea, qgocc_viewWillAppear);
+    }
+    
+    {
+        SEL viewWillLayoutSubviews = sel_registerName("viewWillLayoutSubviews");
+        Method dea = class_getInstanceMethod(object_getClass(self), viewWillLayoutSubviews);
+        Method qgocc_viewWillLayoutSubviews = class_getInstanceMethod(object_getClass(self), @selector(qgocc_viewWillLayoutSubviews));
+        method_exchangeImplementations(dea, qgocc_viewWillLayoutSubviews);
+        
+    }
+    
 }
 
--(void)dismissViewController:(BOOL)flag completion:(void (^)(void))completion{
+/**
+ *  返回
+ *  @param  flag:是否有动画
+ *  @param  completion:是否有完成block
+ *  return  无
+ */
+-(void)qgocc_dismissViewController:(BOOL)flag completion:(void (^)(void))completion{
     
     [self removeNotification];
     
@@ -100,10 +127,14 @@
 
 -(void)onPopoverDismissAction:(UIControl *)controlView{
     
-    [self dismissViewController:NO completion:nil];
+    [self qgocc_dismissViewController:NO completion:nil];
 }
 
--(void)addKeyboardNotificationObserver{
+/**
+ *  添加键盘监控，当弹出键盘时弹框界面上移
+ *  return  无
+ */
+-(void)qgocc_addKeyboardNotificationObserver{
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
@@ -173,7 +204,12 @@
     [[NSNotificationCenter defaultCenter] removeObserver:UIKeyboardDidHideNotification];
 }
 
-- (void)updateTitle:(NSString*)title
+/**
+ *  设置弹框层的标题
+ *  @param  title:标题
+ *  return  无
+ */
+- (void)qgocc_updateTitle:(NSString*)title
 {
     if(self.popBoxView == nil)
         return;
@@ -181,13 +217,23 @@
     
 }
 
-- (void)addTopSubView:(UIView*)sub
+/**
+ *  在最上面标题栏的view添加子控件
+ *  @param  sub:子控件
+ *  return  无
+ */
+- (void)qgocc_addTopSubView:(UIView*)sub
 {
     [[self.popBoxView viewWithTag:100] addSubview:sub];
     
 }
 
-- (void)presentedByPresentingVC:(UIViewController*)presentingVC
+/**
+ *  在当前页面弹出此弹框
+ *  @param  presentingVC:当前页面
+ *  return  无
+ */
+- (void)qgocc_presentedByPresentingVC:(UIViewController*)presentingVC
 {
     
     self.preferredContentSize=CGSizeMake(self.view.frame.size.width-170*2, self.view.frame.size.height-140*2);
@@ -197,7 +243,16 @@
     
 }
 
--(void)popupAnimationWithSpring{
+-(void)qgocc_ViewWillAppear:(BOOL)animated{
+    [self qgocc_ViewWillAppear:animated];
+    [self qgocc_popupAnimationWithSpring];
+}
+
+/**
+ *  当要显示的时候需要有个动画可以在viewWillAppear中做此动作
+ *  return  无
+ */
+-(void)qgocc_popupAnimationWithSpring{
     self.popBoxView.transform=CGAffineTransformMakeScale(0.1, 0.1);
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionTransitionNone animations:^{
         self.popBoxView.transform=CGAffineTransformMakeScale(1, 1);
@@ -206,7 +261,17 @@
     
 }
 
-- (void)viewWillLayout
+-(void)qgocc_viewWillLayoutSubviews{
+    
+    [self qgocc_viewWillLayoutSubviews];
+    [self qgocc_viewWillLayout];
+}
+
+/**
+ *  更新背景颜色 和大小 在viewWillLayoutSubviews中调用
+ *  return  无
+ */
+- (void)qgocc_viewWillLayout
 {
     self.view.superview.frame=[[UIScreen mainScreen] bounds];
     self.view.superview.backgroundColor = [UIColor clearColor];
