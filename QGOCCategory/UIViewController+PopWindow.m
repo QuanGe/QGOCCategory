@@ -40,11 +40,11 @@
     
     self.view.superview.frame=[[UIScreen mainScreen] bounds];
     self.view.superview.backgroundColor = [UIColor clearColor];
-    
+    self.view.backgroundColor =[UIColor clearColor];
     UIControl * backgroundView=[[UIControl alloc] init];
     {
         [self.view addSubview:backgroundView];
-        backgroundView.backgroundColor=[UIColor clearColor];
+        backgroundView.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
         [backgroundView addTarget:self action:@selector(onPopoverDismissAction:) forControlEvents:UIControlEventTouchUpInside];
         [backgroundView qgocc_configConstraintsWithParentView:self.view rect:CGRectMake(0, 0, 0, 0) marginRightAndBottom:CGPointZero];
     }
@@ -55,12 +55,13 @@
         self.qgocc_popBoxView.layer.cornerRadius=5;
         [self.view addSubview:self.qgocc_popBoxView];
         
-        [self.qgocc_popBoxView qgocc_configConstraintsWithParentView:self.view rect:CGRectMake(170, 140, self.view.frame.size.width-2*170, self.view.frame.size.height-140*2) marginRightAndBottom:CGPointZero];
+        [self.qgocc_popBoxView qgocc_configConstraintsWithParentView:self.view rect:CGRectMake(self.view.frame.size.width*0.1, self.view.frame.size.height*0.25, self.view.frame.size.width*0.8, self.view.frame.size.height*0.5) marginRightAndBottom:CGPointZero];
        
         
         UIView *topBarView=[[UIView alloc] init];
         {
             topBarView.tag = 100;
+            //topBarView.backgroundColor = [UIColor yellowColor];
             [self.qgocc_popBoxView addSubview:topBarView];
             [topBarView qgocc_configConstraintsWithParentView:self.qgocc_popBoxView rect:CGRectMake(0, 0, 0, 60) marginRightAndBottom:CGPointZero];
             
@@ -71,14 +72,14 @@
                 [topBarView addSubview:titileLabel];
                 titileLabel.tag = 1000;
                 
-                [titileLabel qgocc_configConstraintsWithParentView:topBarView rect:CGRectMake(70, 0, 0, 0) marginRightAndBottom:CGPointMake(-70, 0)];
+                [titileLabel qgocc_configConstraintsWithParentView:topBarView rect:CGRectMake(70, 0, 0, 0) marginRightAndBottom:CGPointMake(70, 0)];
                
             }
             UIView * line = [[UIView alloc] init];
             {
                 [topBarView addSubview:line];
                 line.backgroundColor =[UIColor lightGrayColor];
-                [line qgocc_configConstraintsWithParentView:topBarView rect:CGRectMake(0, 55.5, 0, 0.5) marginRightAndBottom:CGPointZero];
+                [line qgocc_configConstraintsWithParentView:topBarView rect:CGRectMake(0, 55.0, 0, 1.0) marginRightAndBottom:CGPointZero];
             }
             
         }
@@ -236,9 +237,18 @@
 - (void)qgocc_presentedByPresentingVC:(UIViewController*)presentingVC
 {
     
-    self.preferredContentSize=CGSizeMake(self.view.frame.size.width-170*2, self.view.frame.size.height-140*2);
-    self.modalPresentationStyle = UIModalPresentationFormSheet;
+    self.preferredContentSize=CGSizeMake(self.view.frame.size.width*0.8, self.view.frame.size.height*0.5);
+    //self.modalPresentationStyle = UIModalPresentationFormSheet;
     self.qgocc_presentingVC = presentingVC;
+    self.view.backgroundColor = [UIColor clearColor];
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+#ifdef __IPHONE_8_0
+    if([[[[UIDevice currentDevice] systemVersion]substringToIndex:1] floatValue] >= 8.0)
+    {
+        [self setModalPresentationStyle:UIModalPresentationOverCurrentContext];
+    }
+#endif
+
     [presentingVC presentViewController:self animated:NO completion:NULL];
     
 }
@@ -275,5 +285,6 @@
 {
     self.view.superview.frame=[[UIScreen mainScreen] bounds];
     self.view.superview.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor =[UIColor clearColor];
 }
 @end
