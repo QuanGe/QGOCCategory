@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (PopWindow)
-@property (nonatomic) UIView *popBoxView;
-@property (nonatomic) UIViewController*presentingVC;
+@property (nonatomic) UIView *qgocc_popBoxView;
+@property (nonatomic) UIViewController*qgocc_presentingVC;
 
 /**
  *  创建显示层,第一步要做的就是这个，可以写在[super loadView]的下面
