@@ -79,7 +79,11 @@
             {
                 [topBarView addSubview:line];
                 line.backgroundColor =[UIColor lightGrayColor];
-                [line qgocc_configConstraintsWithParentView:topBarView rect:CGRectMake(0, 55.0, 0, 1.0) marginRightAndBottom:CGPointZero];
+                NSArray * constraints = [line qgocc_configConstraintsWithParentView:topBarView rect:CGRectMake(0, 55.0, 0, 1.0) marginRightAndBottom:CGPointZero];
+                for (NSLayoutConstraint * obj in constraints) {
+                    if(obj.constant == 1.0)
+                        obj.constant = 0.5;
+                }
             }
             
         }
