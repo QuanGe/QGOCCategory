@@ -2,6 +2,8 @@
 
 Use this lib you can get some iOS Object-C category 
 
+支持iOS7以上
+
 `UIViewController+LogDealloc`   监测UIViewController返回时是否被释放
 
 `UITabBarController+HideTabBar` UITabBarController隐藏TabBar
@@ -31,3 +33,5 @@ Use this lib you can get some iOS Object-C category
 `UIView (VFL)`                  以VFL实现非常简单的的自动布局
 
 `UITextView (PlaceHolder)`      textview占位文字的添加 及字数限制
+
+`UIViewController (PopWindow)`  弹框 
