@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981DA17D1BCFE6C500FEB775 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 981DA17C1BCFE6C500FEB775 /* NSString+Common.m */; settings = {ASSET_TAGS = (); }; };
 		98921B5C1BC69E8F0041B616 /* UIView+VFL.m in Sources */ = {isa = PBXBuildFile; fileRef = 98921B5B1BC69E8F0041B616 /* UIView+VFL.m */; settings = {ASSET_TAGS = (); }; };
 		98A3B8B11BCAACC50057D87F /* UIViewController+PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3B8B01BCAACC50057D87F /* UIViewController+PopWindow.m */; settings = {ASSET_TAGS = (); }; };
 		98DB45061BCB60CA00222DF9 /* testPopWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DB45051BCB60CA00222DF9 /* testPopWindowViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		981DA17B1BCFE6C500FEB775 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		981DA17C1BCFE6C500FEB775 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
 		98921B5A1BC69E8F0041B616 /* UIView+VFL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VFL.h"; sourceTree = "<group>"; };
 		98921B5B1BC69E8F0041B616 /* UIView+VFL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VFL.m"; sourceTree = "<group>"; };
 		98A3B8AF1BCAACC50057D87F /* UIViewController+PopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopWindow.h"; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				98F383261BC6B74D004D839F /* UITextView+PlaceHolder.m */,
 				98A3B8AF1BCAACC50057D87F /* UIViewController+PopWindow.h */,
 				98A3B8B01BCAACC50057D87F /* UIViewController+PopWindow.m */,
+				981DA17B1BCFE6C500FEB775 /* NSString+Common.h */,
+				981DA17C1BCFE6C500FEB775 /* NSString+Common.m */,
 			);
 			name = QGOCCategory;
 			path = ../../QGOCCategory;
@@ -276,6 +281,7 @@
 				98F383271BC6B74D004D839F /* UITextView+PlaceHolder.m in Sources */,
 				98F57FDF1BC0AFAC0071D3E9 /* NSString+AES256.m in Sources */,
 				98921B5C1BC69E8F0041B616 /* UIView+VFL.m in Sources */,
+				981DA17D1BCFE6C500FEB775 /* NSString+Common.m in Sources */,
 				98EDC7C81BC26AF1004C5277 /* UIColor+Common.m in Sources */,
 				98F57FE81BC0B4340071D3E9 /* UITabBarController+HideTabBar.m in Sources */,
 				98F57FD81BC011D30071D3E9 /* UIViewController+LogDealloc.m in Sources */,
