@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface NSString (Common)
-
+- (NSString*)addStringByWord:(NSString *)word viewWidth:(CGFloat)width fontSize:(CGFloat)fontSize;
 @end
