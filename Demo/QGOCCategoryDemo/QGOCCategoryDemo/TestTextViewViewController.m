@@ -32,9 +32,9 @@
        
         [text qgocc_configConstraintsWithParentView:self.view rect:CGRectMake(100, 160, 200, 200) marginRightAndBottom:CGPointZero];
         
-        NSMutableAttributedString *thetext = [[NSMutableAttributedString alloc] initWithString:@"虽然当今设备日益网络化，但它们大多数还是处于独立工作状态。在Gartner预测的设备网中，情况将会改变。不同设备，例如智能手机、可穿戴设备和家庭娱乐设备以及汽车之间彼此间可以互相" attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor blackColor]}];
+        NSMutableAttributedString *thetext = [[NSMutableAttributedString alloc] initWithString:@"虽然当今设备日益网络化，但它们大多数还是处于独立工作状态。在Gartner预测的设备网中，情况将会改变。不同设备，例如智能手机、可穿戴设备和家庭娱乐设备以及汽车之间彼此间可以互相沟通" attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor blackColor]}];
         NSMutableAttributedString *addtext = [[NSMutableAttributedString alloc] initWithString:@"[查看更多]" attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor redColor]}];
-        text.attributedText = [thetext addStringByWord:addtext viewWidth:190];
+        text.attributedText = [thetext qgocc_addStringByWord:addtext viewWidth:190];
     }
 }
 

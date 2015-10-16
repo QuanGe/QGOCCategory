@@ -10,5 +10,12 @@
 #import <UIKit/UIKit.h>
 
 @interface NSMutableAttributedString (Common)
-- (NSMutableAttributedString*)addStringByWord:(NSMutableAttributedString *)word viewWidth:(CGFloat)width;
+
+/**
+ *  在富文本NSString后面添加单词，使单词内不存在换行
+ *  @param  word:单词
+ *  @param  width:文字显示控件UI的宽度
+ *  return  插入后的文字
+ */
+- (NSMutableAttributedString*)qgocc_addStringByWord:(NSMutableAttributedString *)word viewWidth:(CGFloat)width;
 @end
