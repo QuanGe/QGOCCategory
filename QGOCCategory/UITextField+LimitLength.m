@@ -42,7 +42,7 @@
     //if the systemVersion up 8.0
     if([[[[UIDevice currentDevice] systemVersion]substringToIndex:1] floatValue] != 7.0)
     {
-        if(self.text.length <= textLength)
+        if(self.text.length <= textLength&&textLength>0)
             return;
         self.text = [self.text substringToIndex:textLength];
         return;
@@ -66,7 +66,7 @@
         // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
         if (!position) {
             //NSLog(@"汉字");
-            if ( str.length> textLength) {
+            if ( str.length> textLength&&textLength>0) {
                 NSString *strNew = [NSString stringWithString:str];
                 [self setText:[strNew substringToIndex:textLength]];
             }
@@ -77,7 +77,7 @@
             
         }
     }
-    else if(self.text.length > textLength){
+    else if(self.text.length > textLength&&textLength>0){
         self.text = [self.text substringToIndex:textLength];
     }
 }

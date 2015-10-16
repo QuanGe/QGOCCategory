@@ -63,7 +63,7 @@
     
     if([[[[UIDevice currentDevice] systemVersion]substringToIndex:1] floatValue] != 7.0)
     {
-        if(self.text.length > [self qgocc_maxLengthNum])
+        if(self.text.length > [self qgocc_maxLengthNum] && [self qgocc_maxLengthNum]>0)
         self.text = [self.text substringToIndex:[self qgocc_maxLengthNum]];
         
     }
@@ -87,7 +87,7 @@
             // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
             if (!position) {
                 //NSLog(@"汉字");
-                if ( str.length> [self qgocc_maxLengthNum]) {
+                if ( str.length> [self qgocc_maxLengthNum] &&[self qgocc_maxLengthNum]>0) {
                     NSString *strNew = [NSString stringWithString:str];
                     [self setText:[strNew substringToIndex:[self qgocc_maxLengthNum]]];
                 }
@@ -98,12 +98,12 @@
                 
             }
         }
-        else if(self.text.length > [self qgocc_maxLengthNum]){
+        else if(self.text.length > [self qgocc_maxLengthNum] &&[self qgocc_maxLengthNum]>0){
             self.text = [self.text substringToIndex:[self qgocc_maxLengthNum]];
         }
     }
    
-    if(self.attributedText.length>[self qgocc_maxLengthNum])
+    if(self.attributedText.length>[self qgocc_maxLengthNum] &&[self qgocc_maxLengthNum]>0)
         self.attributedText = [self.attributedText attributedSubstringFromRange:NSMakeRange(0,[self qgocc_maxLengthNum])];
     if (self.hasText) return;
     

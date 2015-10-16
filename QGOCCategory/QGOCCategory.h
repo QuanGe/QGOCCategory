@@ -24,3 +24,4 @@
 #import "UIView+VFL.h"
 #import "UITextView+PlaceHolder.h"
 
+#import "NSMutableAttributedString+Common.h"
