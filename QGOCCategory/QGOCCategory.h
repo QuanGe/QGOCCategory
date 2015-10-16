@@ -23,5 +23,6 @@
 #import "UIDevice+Common.h"
 #import "UIView+VFL.h"
 #import "UITextView+PlaceHolder.h"
-
+#import "UIViewController+PopWindow.h"
+#import "NSString+Common.h"
 #import "NSMutableAttributedString+Common.h"

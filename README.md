@@ -35,3 +35,7 @@ Use this lib you can get some iOS Object-C category
 `UITextView (PlaceHolder)`      textview占位文字的添加 及字数限制
 
 `UIViewController (PopWindow)`  弹框 
+
+`NSString (Common)`             文字后加单词
+
+`NSMutableAttributedString (Common)` 文字后加单词
