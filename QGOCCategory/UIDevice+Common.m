@@ -134,8 +134,8 @@
 + (NSString *)qgocc_totalDiskSpaceBytes
 {
     NSDictionary *fattributes = [[ NSFileManager defaultManager ] attributesOfFileSystemForPath : NSHomeDirectory () error : nil ];
-    
-    return @([[fattributes objectForKey : NSFileSystemSize ] floatValue]/1024.0/1024.0).stringValue;
+    CGFloat num = [[fattributes objectForKey : NSFileSystemSize ] floatValue]/1024.0/1024.0;
+    return [NSString stringWithFormat:@"%.1f%@",num>1024?num/1024.0:num,num>1024?@"G":@"M"];
     
 }
 
@@ -146,8 +146,8 @@
 + (NSString *)qgocc_freeDiskSpaceBytes
 {
     NSDictionary *fattributes = [[ NSFileManager defaultManager ] attributesOfFileSystemForPath : NSHomeDirectory () error : nil ];
-    
-    return @([[fattributes objectForKey : NSFileSystemFreeSize ] floatValue]/1024.0/1024.0).stringValue;
+    CGFloat num = [[fattributes objectForKey : NSFileSystemFreeSize ] floatValue]/1024.0/1024.0;
+    return [NSString stringWithFormat:@"%.1f%@",num>1024?num/1024.0:num,num>1024?@"G":@"M"];
     
 }
 @end
