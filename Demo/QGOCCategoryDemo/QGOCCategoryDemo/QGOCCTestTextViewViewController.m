@@ -1,14 +1,14 @@
 //
-//  TestTextViewViewController.m
+//  QGOCCTestTextViewViewController.m
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/8.
 //  Copyright © 2015年 QuanGe. All rights reserved.
 //
 
-#import "TestTextViewViewController.h"
+#import "QGOCCTestTextViewViewController.h"
 #import "QGOCCategory.h"
-@implementation TestTextViewViewController
+@implementation QGOCCTestTextViewViewController
 
 - (void)loadView
 {

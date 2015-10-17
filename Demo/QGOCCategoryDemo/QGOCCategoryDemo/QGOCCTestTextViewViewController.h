@@ -1,5 +1,5 @@
 //
-//  TestTextViewViewController.h
+//  QGOCCTestTextViewViewController.h
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestTextViewViewController : UIViewController
+@interface QGOCCTestTextViewViewController : UIViewController
 
 @end

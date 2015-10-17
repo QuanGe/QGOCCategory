@@ -1,20 +1,20 @@
 //
-//  ViewController.m
+//  QGOCCViewController.m
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/3.
 //  Copyright © 2015年 QuanGe. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "QGOCCViewController.h"
 #import "QGOCCategory.h"
-#import "TestTextViewViewController.h"
-#import "testPopWindowViewController.h"
-@interface ViewController ()
+#import "QGOCCTestTextViewViewController.h"
+#import "QGOCCTestPopWindowViewController.h"
+@interface QGOCCViewController ()
 
 @end
 
-@implementation ViewController
+@implementation QGOCCViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,12 +48,12 @@
 {
     if(sender.tag == 2)
     {
-        TestTextViewViewController * tt = [[TestTextViewViewController alloc] init];
+        QGOCCTestTextViewViewController * tt = [[QGOCCTestTextViewViewController alloc] init];
         [self.navigationController pushViewController:tt animated:YES];
     }
     else
     {
-        testPopWindowViewController * tt = [[testPopWindowViewController alloc] init];
+        QGOCCTestPopWindowViewController * tt = [[QGOCCTestPopWindowViewController alloc] init];
         [tt qgocc_presentedByPresentingVC:self];
     }
     

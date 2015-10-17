@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  QGOCCAppDelegate.h
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/3.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface QGOCCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

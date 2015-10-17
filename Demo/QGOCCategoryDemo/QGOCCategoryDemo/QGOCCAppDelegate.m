@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  QGOCCAppDelegate.m
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/3.
 //  Copyright © 2015年 QuanGe. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "QGOCCAppDelegate.h"
 
-@interface AppDelegate ()
+@interface QGOCCAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation QGOCCAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

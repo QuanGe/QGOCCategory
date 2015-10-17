@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QGOCCViewController.h
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/3.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface QGOCCViewController : UIViewController
 
 
 @end

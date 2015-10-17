@@ -1,14 +1,14 @@
 //
-//  testPopWindowViewController.m
+//  QGOCCtestPopWindowViewController.m
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/12.
 //  Copyright © 2015年 QuanGe. All rights reserved.
 //
 
-#import "testPopWindowViewController.h"
+#import "QGOCCTestPopWindowViewController.h"
 #import "QGOCCategory.h"
-@implementation testPopWindowViewController
+@implementation QGOCCTestPopWindowViewController
 
 - (void)loadView
 {

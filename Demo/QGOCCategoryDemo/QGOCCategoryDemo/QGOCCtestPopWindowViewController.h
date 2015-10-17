@@ -1,5 +1,5 @@
 //
-//  testPopWindowViewController.h
+//  QGOCCTestPopWindowViewController.h
 //  QGOCCategoryDemo
 //
 //  Created by 张如泉 on 15/10/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+PopWindow.h"
-@interface testPopWindowViewController : UIViewController
+@interface QGOCCTestPopWindowViewController : UIViewController
 
 @end
