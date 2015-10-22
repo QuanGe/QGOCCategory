@@ -109,13 +109,9 @@
  */
 - (UIImage *)qgocc_captureImageWithFrame:(CGRect)frame
 {
-    UIImage *image = nil;
-    UIGraphicsBeginImageContext(CGSizeMake(frame.size.width, frame.size.height));
-    [self drawInRect:frame];
-    image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return image;
+    CGImageRef imageRef = nil;
+    imageRef = CGImageCreateWithImageInRect([self CGImage], frame);
+    return [UIImage imageWithCGImage:imageRef];
     
 }
 
