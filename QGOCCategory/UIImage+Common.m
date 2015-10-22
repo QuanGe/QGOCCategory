@@ -110,9 +110,7 @@
 - (UIImage *)qgocc_captureImageWithFrame:(CGRect)frame
 {
     UIImage *image = nil;
-    CGFloat scale = [UIScreen mainScreen].scale;
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, scale);
-    [[UIBezierPath bezierPathWithRect:frame] addClip];
+    UIGraphicsBeginImageContext(CGSizeMake(frame.size.width, frame.size.height));
     [self drawInRect:frame];
     image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
