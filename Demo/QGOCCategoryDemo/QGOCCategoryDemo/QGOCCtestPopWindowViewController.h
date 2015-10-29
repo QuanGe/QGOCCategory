@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+PopWindow.h"
+#import "UIViewController+QGOCCPopWindow.h"
 @interface QGOCCTestPopWindowViewController : UIViewController
 
 @end

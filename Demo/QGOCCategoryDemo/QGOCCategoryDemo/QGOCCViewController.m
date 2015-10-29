@@ -43,7 +43,7 @@
     
     UIImageView * imageView = [[UIImageView alloc] init];
     {
-        [imageView setImage:[[UIImage imageNamed:@"togglecovers"] qgocc_captureImageWithFrame:CGRectMake(0, 17, 17, 17)]];
+        [imageView setImage:[[UIImage imageNamed:@"togglecovers"] qgocc_captureImageWithFrame:CGRectMake(0, 17*[UIDevice qgocc_isRetina], 17*[UIDevice qgocc_isRetina], 17*[UIDevice qgocc_isRetina])]];
         [self.view addSubview:imageView];
         [imageView qgocc_configConstraintsWithParentView:self.view rect:CGRectMake(100, 100, 34, 34) marginRightAndBottom:CGPointZero];
     }
